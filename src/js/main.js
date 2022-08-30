@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const target = e.target;
         if (!target.closest('.menu') && !target.closest('.burger__btn')){
             menu.classList.remove('active');
+            menuBtn.classList.toggle('active');
         }
     })
 

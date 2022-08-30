@@ -812,7 +812,7 @@ a{
             left: calc(50% + -176px);
             background: url('../images/prev-slide.svg') 0 0 no-repeat;
             background-color: #00963E;
-            background-position: center center;
+            background-position: 14px center;
             border: none;
             border-radius: 50%;
 
@@ -826,7 +826,7 @@ a{
             background-color: #00963E;
             border: none;
             border-radius: 50%;
-            background-position: center center;
+            background-position: 18px center;
 
             @include respond-below(mxs){
               right: calc(50% + -155px);
@@ -1126,7 +1126,7 @@ a{
               left: calc(50% + -183px);
               background: url('../images/prev-slide.svg') 0 0 no-repeat;
               background-color: #00963E;
-              background-position: center center;
+              background-position: 14px center;
               border: none;
               border-radius: 50%;
 
@@ -1140,7 +1140,7 @@ a{
               background-color: #00963E;
               border: none;
               border-radius: 50%;
-              background-position: center center;
+              background-position: 18px center;
               
               @include respond-below(mxs){
                 right: calc(50% + -153px);
