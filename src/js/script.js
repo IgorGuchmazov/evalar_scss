@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $('.slider').slick({
-        appendArrows:$('.arrows')
+        appendArrows:$('.arrows'),
+        variableWidth: true
     });
 });
 
