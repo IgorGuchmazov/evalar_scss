@@ -282,12 +282,21 @@ a{
     padding: 0;
     overflow: hidden;
 
+    @include respond-above(mlg){
+      max-width: none;
+    }
+
     .nature__inner{
       position: relative;
 
 
       .nature__img{
         margin-bottom: 64px;
+
+        @include respond-above(mlg){
+          width: 100%;
+          max-height: 1170px;
+        }
 
         @include respond-below(md){
           width: 100%;
@@ -326,6 +335,11 @@ a{
 
         font-family: 'Formular';
         font-style: normal;
+
+        @include respond-above(mlg){
+          left: auto;
+          right: calc(50% + 50px);
+        }
 
         @include respond-below(lg){
           height: auto;
@@ -469,6 +483,10 @@ a{
       justify-content: space-between;
       padding: 0 215px;
 
+
+      @include respond-above(mlg){
+        padding: 0 70px;
+      }
       @include respond-below(mlg){
         padding: 0 130px;
       }
@@ -589,6 +607,12 @@ a{
   }
 }
 .information{
+
+  @include respond-above(mlg){
+    background:no-repeat url("../images/back_information.jpg");
+    background-size: 100%;
+  }
+
   &__container{
     max-width: 1440px;
     margin:0 auto;
@@ -602,6 +626,14 @@ a{
       justify-content: space-between;
       align-items: center;
       background:no-repeat url("../images/back_information.jpg");
+
+      @include respond-above(mlg){
+        padding: 0 70px;
+      }
+
+      @include respond-above(mlg){
+        background: none;
+      }
 
       @include respond-below(mlg){
         padding: 0 127px;
@@ -804,6 +836,10 @@ a{
     .news__inner{
       padding: 0 152px;
       margin-bottom: 97px;
+
+      @include respond-above(mlg){
+        padding: 0 70px;
+      }
 
       @include respond-below(mlg){
         padding: 0 72px;
@@ -1079,6 +1115,12 @@ a{
   }
 }
 .form{
+
+  @include respond-above(mlg){
+    background-image: url("../images/back_form.png");
+    background-size: 100%;
+  }
+
   &__container{
     max-width: 1440px;
     width: 100%;
@@ -1090,6 +1132,10 @@ a{
       display: flex;
       justify-content: center;
       align-items: center;
+
+      @include respond-above(mlg){
+        background: none;
+      }
 
       @include respond-below(sm){
         height: auto;
